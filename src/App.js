@@ -2,6 +2,7 @@ import React from "react";
 import MovieList from "./MovieList";
 import Nav from "./Nav";
 import { MovieProvider } from "./MovieContext";
+import AddMovie from "./AddMovie";
 
 function App() {
   return (
@@ -9,6 +10,7 @@ function App() {
       <div className="App">
         <Nav />
         <MovieList />
+        <AddMovie />
       </div>
     </MovieProvider>
   );
