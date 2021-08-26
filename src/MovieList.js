@@ -1,28 +1,12 @@
-import react, {useState} from 'react';
+import React, {useContext} from 'react';
 import Movie from './Movie';
+import { MovieContext } from './MovieContext';
 
 
 const MovieList = () => {
-    const [movies, setMovies] = useState([
-        {
-            name: 'Interstellar',
-            id: 1
-        },
-        {
-            name: 'A New Hope',
-            id: 2
-        },
-        {
-            name: 'The Hobbit',
-            id: 3
-        },
-        {
-            name: 'Inception',
-            id: 4
-        }
-    ]);
+    const [movies, setMovies] = useContext(MovieContext);
 
-    // console.log(movies)
+    
 
     return(
        <div>
